@@ -4,7 +4,10 @@
   "description": "A idle cookie clicker.",
   "main": "index.js",
   "scripts": {
-    "start": "node_modules\\electron\\dist\\electron.exe ."
+    "start": "node_modules\\electron\\dist\\electron.exe .",
+    "postinstall": "electron-builder install-app-deps",
+    "build": "electron-builder --windows",
+    "release": "electron-builder --windows --linux --publish always"
   },
   "repository": {
     "type": "git",
@@ -26,11 +29,27 @@
     "url": "https://github.com/bloomint/bloomint/issues"
   },
   "homepage": "https://github.com/bloomint/bloomint#readme",
+  "build": {
+    "appId": "lukeacat.bloomint",
+    "productName": "Bloomint",
+    "mac": {
+      "category": "public.app-category.games"
+    },
+    "dmg": {
+      "icon": false
+    },
+    "linux": {
+      "target": [
+        "AppImage"
+      ],
+      "category": "Game"
+    }
+  },
   "devDependencies": {
+    "electron-builder": "22.9.1",
     "electron": "11.1.1"
   },
   "dependencies": {
-    "discord-rich-presence": "0.0.8",
-    "username": "^5.1.0"
+    "discord-rich-presence": "0.0.8"
   }
 }
