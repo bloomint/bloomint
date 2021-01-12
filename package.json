@@ -1,0 +1,36 @@
+{
+  "name": "bloomint",
+  "version": "1.0.0",
+  "description": "A idle cookie clicker.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node_modules\\electron\\dist\\electron.exe ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bloomint/bloomint.git"
+  },
+  "keywords": [
+    "cookie",
+    "clicker",
+    "bloomint",
+    "node",
+    "electron",
+    "cookie-clicker",
+    "game",
+    "nodejs"
+  ],
+  "author": "lukeacat",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bloomint/bloomint/issues"
+  },
+  "homepage": "https://github.com/bloomint/bloomint#readme",
+  "devDependencies": {
+    "electron": "11.1.1"
+  },
+  "dependencies": {
+    "discord-rich-presence": "0.0.8",
+    "username": "^5.1.0"
+  }
+}
